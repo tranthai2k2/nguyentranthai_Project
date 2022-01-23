@@ -6,9 +6,12 @@ public class bai8 {
         System.out.print("nhap vao n: " );
         int n =sc.nextInt();
         int sum =0;
+        int m;
         for(int i=1;i<=n;i++){
-            sum +=i;
-            System.out.println("so nguyen: "+ i);
+            System.out.println("nhap vao so nguyen: ");
+            m=sc.nextInt();
+            sum +=m;
+    
         }
 
        
