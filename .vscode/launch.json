@@ -1,0 +1,84 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Launch bai1",
+            "request": "launch",
+            "mainClass": "helloworld.bai1",
+            "projectName": "helloworld"
+        },
+        {
+            "type": "java",
+            "name": "Launch bai10",
+            "request": "launch",
+            "mainClass": "helloworld.bai10",
+            "projectName": "helloworld"
+        },
+        {
+            "type": "java",
+            "name": "Launch bai11",
+            "request": "launch",
+            "mainClass": "helloworld.bai11",
+            "projectName": "helloworld"
+        },
+        {
+            "type": "java",
+            "name": "Launch bai2",
+            "request": "launch",
+            "mainClass": "helloworld.bai2",
+            "projectName": "helloworld"
+        },
+        {
+            "type": "java",
+            "name": "Launch bai3",
+            "request": "launch",
+            "mainClass": "helloworld.bai3",
+            "projectName": "helloworld"
+        },
+        {
+            "type": "java",
+            "name": "Launch bai4",
+            "request": "launch",
+            "mainClass": "helloworld.bai4",
+            "projectName": "helloworld"
+        },
+        {
+            "type": "java",
+            "name": "Launch bai5",
+            "request": "launch",
+            "mainClass": "helloworld.bai5",
+            "projectName": "helloworld"
+        },
+        {
+            "type": "java",
+            "name": "Launch bai6",
+            "request": "launch",
+            "mainClass": "helloworld.bai6",
+            "projectName": "helloworld"
+        },
+        {
+            "type": "java",
+            "name": "Launch bai7",
+            "request": "launch",
+            "mainClass": "helloworld.bai7",
+            "projectName": "helloworld"
+        },
+        {
+            "type": "java",
+            "name": "Launch bai9",
+            "request": "launch",
+            "mainClass": "helloworld.bai9",
+            "projectName": "helloworld"
+        }
+    ]
+}
