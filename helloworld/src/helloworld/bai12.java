@@ -34,6 +34,7 @@ public class bai12 {
                 }
             }
         }
+        System.out.println("gia tri ln: "+ max);
 
 
     }
