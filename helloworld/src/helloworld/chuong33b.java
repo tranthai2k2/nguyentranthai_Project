@@ -4,11 +4,7 @@ class Diem{
     
     protected  int hoanh, tung ;
     public Diem(){
-        this.hoanh =0;
-        this.tung=0;
-    }
-   public Diem(int hoanh, int tung){
-    Scanner sc = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
         // int a, int b
         this.hoanh=hoanh;
         this.tung=tung;
@@ -16,6 +12,10 @@ class Diem{
        hoanh = sc.nextInt();
        System.out.println("nhập tung do:");
        tung = sc.nextInt();
+    }
+   public Diem(int hoanh, int tung){
+    this.hoanh =hoanh;
+    this.tung =tung;
     }
     public void InDiem(){
         System.out.print("toa do diem : ( "+this.hoanh +" , "+ this.tung+" )");
@@ -26,8 +26,11 @@ class tamgiac extends Diem{
     private Diem A,B,C;
  
     tamgiac(){
+        System.out.println("da nhap toa do diem t1\n");
         A = new Diem();
+        System.out.println("da nhap toa do diem t2\n");
         B = new Diem();
+        System.out.println("da nhap toa do diem t3\n");
         C = new Diem();
     }
     public void Intamgiac(){
@@ -36,6 +39,19 @@ class tamgiac extends Diem{
        System.out.print("\ndiem b: "); B.InDiem();
        System.out.print("\ndiem c: "); C.InDiem();
     }
+    public  void kiemtratamgiac()
+    {
+        if(A.hoanh == B.hoanh && A.hoanh == C.hoanh ){
+            if(A.tung == B.tung && A.tung == C.tung)
+           System.out.println("\nkhong la tam giac");
+           else   System.out.println("\nla tam giac");
+        } 
+    }
+    public double dientichtamgiac(){
+        return (double) 1/2 * Math.abs(  (B.hoanh - A.hoanh ) * (C.tung - A.tung) - (C.hoanh - A.hoanh)*(B.tung - A.tung)  );
+    }
+       
+     
 }
 class Duongtron  extends Diem{
     protected  int r;
@@ -65,5 +81,6 @@ public class chuong33b {
     // System.out.println("chuvi duong tron: "+ a.chuvi());
     tamgiac ABC = new tamgiac();
     ABC.Intamgiac();
+    ABC.kiemtratamgiac();
     }
 }
