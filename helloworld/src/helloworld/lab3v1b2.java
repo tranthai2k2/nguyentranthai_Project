@@ -43,6 +43,7 @@ class thisinh{
         System.out.print("nhap nguoi t" + (i+1)+" : ");
           b[i] = new thisinh();
        }
+//         bai nay được làm bởi nguyễn trần thái : 2021050587
        for(int i=0; i<a;i++){
         System.out.print("nhap nguoi t" + (i+1)+" : ");
           b[i].hienthitt();
