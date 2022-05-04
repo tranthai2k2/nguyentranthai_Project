@@ -2,8 +2,8 @@ import java.util.Scanner;
 
 public abstract class Hocvien {
     protected String hoten, diachi ;
-    protected int loaiuutien, loaict , sobuoi ;
-     protected int dongiadh,hp;
+    protected int loaiuutien, loaict ;
+    //  protected int dongiadh,hp;
   //    a =1 thì là loại 1 nếu a =2 thì là loại 2
   //    Đồ họa:   học phí = số buổi*đơngiá ĐH –ưu tiênTrong đó: ưu tiên = 1.000.000 (VNĐ) nếu là loại 1ưu tiên = 500.000 (VNĐ) nếu là loại 2+
   //    Lập trình:  học phí = số buổi*đơn giá LT –ưu tiênTrong đó: ưu tiên = 1.000.000 (VNĐ) nếu là loại 1ưu tiên = 800.000 (VNĐ) nếu là loại 2
@@ -13,10 +13,9 @@ public abstract class Hocvien {
       hoten = sc.nextLine();
       System.out.print("nhap dia chi: ");
       diachi = sc.nextLine();
-      System.out.print("nhap dongiadh: ");
-      dongiadh = sc.nextInt();
-      System.out.print("nhap sobuoi: ");
-      sobuoi = sc.nextInt();
+    //   System.out.print("nhap dongiadh: ");
+    //   dongiadh = sc.nextInt();
+     
       do{
           System.out.print("chọn loai chuong trinh 1 dohoa  hoặc 2 lập trình:");
           loaict = sc.nextInt();
@@ -27,7 +26,7 @@ public abstract class Hocvien {
       }while(loaict<1 && loaict >2);
       do{
           System.out.print("chọn loai uu tien 1 hoac 2:");
-          loaict = sc.nextInt();
+          loaiuutien = sc.nextInt();
           if(loaiuutien >2 && loaiuutien < 1){
               System.out.print("nhap lai gia tri!");
           }

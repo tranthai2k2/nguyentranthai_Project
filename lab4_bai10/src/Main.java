@@ -9,7 +9,6 @@ public class Main {
        lt.nhapthongtin();
        lt.inthongtin();
        lt.hocphi();
-// đây là bài của nguyễn trần thái - 2021050587
     }
  
 }
