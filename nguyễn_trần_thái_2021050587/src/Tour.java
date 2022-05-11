@@ -4,6 +4,7 @@ import java.util.Scanner;
 public class Tour {
     private String title;
    private double price;
+    private double name;
     Scanner sc = new Scanner(System.in);
     public double getTax(){
        return 0.5/100 *price;
@@ -18,6 +19,7 @@ public class Tour {
    public void getTour () {
     System.out.println("ten tour du lich: "+ title);
     System.out.println("ten gia: "+ price);
+      this.name="nguyentranthai";
    }
     public static void main(String[] args) throws Exception {
         Tour a = new Tour();
