@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class Tour {
     private String title;
    private double price;
-    private double name;
+    protected double name;
     Scanner sc = new Scanner(System.in);
     public double getTax(){
        return 0.5/100 *price;
